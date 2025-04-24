@@ -9,3 +9,297 @@
 a {
     text-decoration: none;
 }
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: url(../images/bg.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+i {
+    font-size: 24px;
+    color: grey;
+}
+
+.search {
+    width: 100%;
+    margin-top: 7.5em;
+}
+
+.search-modal {
+    margin: 0 auto; 
+    width: 40%;
+    background: linear-gradient(320deg, rgba(27, 27, 27, .9) 0%, rgba(20, 20, 20, .96) 100%);
+    border-radius: 1em;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, .1);
+}
+
+.search-bar {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.action-icons {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.input {
+    width: 80%;
+}
+
+#search-input {
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 1em;
+}
+
+::placeholder {
+    color: grey;
+}
+
+.tags-container {
+    padding: 1em;
+    border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.tags-container span {
+    color: gray;
+    font-size: 15px;
+}
+
+.tags {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    background: rgba(255, 255, 255, .1);
+    padding: 0.5em;
+    border-radius: 2em;
+}
+
+.tag p {
+    font-size: 16px;
+    color: #fff;
+}
+
+.search-item-container p {
+    padding: 1em;
+    font-size: 15px;
+    color: gray;
+}
+
+.search-item-container p span {
+    color: #fff;
+}
+
+#search-items {
+    padding: 0;
+    margin: 0;
+}
+
+#search-items li {
+    position: relative;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-icons {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    gap: 0.75em;
+}
+
+.user {
+    position: relative;
+    top: -0.075em;
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 100%;
+    margin-right: 0.5em;
+}
+
+#search-items li a {
+    position: relative;
+    font-size: 16px;
+    color: #fff;
+}
+
+li a span {
+    color: gray;
+    padding-left: 0.25em;
+}
+
+#search-items li:hover:not(.header), 
+.f-item:hover {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+li:nth-child(1) .user {
+    background: url(../images/user-1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+li:nth-child(2) .user {
+    background: url(../images/user-2.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+li:nth-child(3) .user {
+    background: url(../images/user-3.jpg) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+.cmd-icon span {
+    padding: 10px;
+    background: #696666;
+    color: rgb(241, 117, 16);
+}
+
+.quick-actions {
+    width: 100%;
+}
+
+.q-action {
+    padding: 0.75em 1em;
+}
+
+.q-action:nth-child(1) span {
+    font-size: 14px;
+    color: gray;
+}
+
+.q-action {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.q-action:hover:not(.q-header) {
+    background-color: rgba(255, 255, 255, .05);
+}
+
+.key {
+    position: absolute;
+    right: 1em;
+}
+
+.action {
+    padding-left: 0.75em;
+    cursor: pointer;
+}
+
+.action p {
+    position: relative;
+    top: 0.5em;
+    line-height: 100%;
+    font-size: 16px;
+    color: #fff;
+}
+
+.q-action .icon,
+.key, 
+.f-item .icon {
+    width: 30px;
+    height: 30px;
+    background: rgba(255, 255, 255, .1);
+    display: grid;
+    place-items: center;
+    border-radius: 0.2em;
+}
+
+.q-action .icon i,
+.f-item .icon i,
+.key {
+    color: #fff;
+    font-size: 16px;
+}
+
+.f-header {
+    padding: 1em;
+    color: gray;
+    font-size: 15px;
+}
+
+.f-header p span {
+    color: #fff;
+}
+
+.f-item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    padding: 1em;
+}
+
+.file-item {
+    display: flex;
+    align-items: center;
+    padding-left: 1em;
+    gap: 0.75em;
+}
+
+.file-item p:nth-child(1) {
+    color: orangered;
+}
+
+.file-item p span {
+    color: gray;
+}
+
+.btn {
+    position: absolute;
+    right: 1em;
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: gray;
+}
+
+.file-item i {
+    color: #69ca1f;
+}
+
+.search-item-container p {
+    color: gray;
+}
+
+@media (max-width: 900px) {
+    .search-modal {
+        width: 90%;
+    }
+}
+
+
+
